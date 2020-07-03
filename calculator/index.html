@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>過關計算器</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="calculation.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" />
+    <script type="text/javascript" src="calculation.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- toastr v2.1.4 -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+  </head>
+
+  <body>
+    <table style="margin: 0px auto; box-shadow: 0 0 5px #eee !important; border: 1px solid #e1e1ff !important;" cellSpacing="0" cellPadding="0" width="341" align="center">
+      <tbody>
+        <tr>
+          <td width="341">
+            <table border="0" cellSpacing="0" cellPadding="0" width="383" bgColor="#a5a5a5">
+              <form>
+                <tbody>
+                  <tr>
+                    <td bgColor="#f7f7f7" height="30" colSpan="3" align="middle" class="header">過關計算器</td>
+                  </tr>
+
+                  <tr>
+                    <td bgColor="#dbdbdb" height="30" colSpan="3">
+                      <table border="0" cellSpacing="0" cellPadding="0" width="100%">
+                        <tbody>
+                          <tr>
+                            <td height="33" class="td2" align="left">
+                              <table border="0">
+                                <tbody>
+                                  <tr>
+                                    <td width="96" align="right">下注金額 : </td>
+                                    <td width="277">
+                                      <input id="bj" class="kuang" name="bj" type="text">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- <tr></tr> -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr class="th1">
+                    <th bgColor="#ffffff" height="30" align="center">關數</th>
+                    <th bgColor="#ffffff" align="center">賠率</th>
+                    <th bgColor="#ffffff" align="center">分盤狀況</th>
+                  </tr>
+
+                  <tr class="td3">
+                    <td bgColor="#ffffff" height="30" width="70" align="center">1</td>
+                    <td bgColor="#ffffff" width="102" align="center">
+                      <input id="pl1" class="kuang_a1" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#ffffff" width="211" align="center">分盤
+                      <select id="select1" onchange="look1(this.value)" class="bd10" name="select1">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb1" class="bd11" disabled="" name="bfb1" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td4">
+                    <td bgColor="#eef5ff" height="30" align="center">2</td>
+                    <td bgColor="#eef5ff" align="center">
+                      <input id="pl2" class="kuang_a2" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#eef5ff" align="center">分盤
+                      <select id="select2" onchange="look2(this.value)" class="bd10" name="select2">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb2" class="bd11" disabled="" name="bfb2" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td3">
+                    <td bgColor="#ffffff" height="30" align="center">3</td>
+                    <td bgColor="#ffffff" align="center">
+                      <input id="pl3" class="kuang_a1" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#ffffff" align="center">分盤
+                      <select id="select3" onchange="look3(this.value)" class="bd10" name="select3">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb3" class="bd11" disabled="" name="bfb3" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td4">
+                    <td bgColor="#eef5ff" height="30" align="center">4</td>
+                    <td bgColor="#eef5ff" align="center">
+                      <input id="pl4" class="kuang_a2" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#eef5ff" align="center">分盤
+                      <select id="select4" onchange="look4(this.value)" class="bd10" name="select4">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb4" class="bd11" disabled="" name="bfb4" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td3">
+                    <td bgColor="#ffffff" height="30" align="center">5</td>
+                    <td bgColor="#ffffff" align="center">
+                      <input id="pl5" class="kuang_a1" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#ffffff" align="center">分盤
+                      <select id="select5" onchange="look5(this.value)" class="bd10" name="select5">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb5" class="bd11" disabled="" name="bfb5" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td4">
+                    <td bgColor="#eef5ff" height="30" align="center">6</td>
+                    <td bgColor="#eef5ff" align="center">
+                      <input id="pl6" class="kuang_a2" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#eef5ff" align="center">分盤
+                      <select id="select6" onchange="look6(this.value)" class="bd10" name="select6">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb6" class="bd11" disabled="" name="bfb6" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td3">
+                    <td bgColor="#ffffff" height="30" align="center">7</td>
+                    <td bgColor="#ffffff" align="center">
+                      <input id="pl7" class="kuang_a1" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#ffffff" align="center">分盤
+                      <select id="select7" onchange="look7(this.value)" class="bd10" name="select7">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb7" class="bd11" disabled="" name="bfb7" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td4">
+                    <td bgColor="#eef5ff" height="30" align="center">8</td>
+                    <td bgColor="#eef5ff" align="center">
+                      <input id="pl8" class="kuang_a2" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#eef5ff" align="center">分盤
+                      <select id="select8" onchange="look8(this.value)" class="bd10" name="select8">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb8" class="bd11" disabled="" name="bfb8" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td3">
+                    <td bgColor="#ffffff" height="30" align="center">9</td>
+                    <td bgColor="#ffffff" align="center">
+                        <input id="pl9" class="kuang_a1" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#ffffff" align="center">分盤
+                      <select id="select9" onchange="look9(this.value)" class="bd10" name="select9">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb9" class="bd11" disabled="" name="bfb9" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr class="td4">
+                    <td bgColor="#eef5ff" height="30" align="center">10</td>
+                    <td bgColor="#eef5ff" align="center">
+                      <input id="pl10" class="kuang_a2" name="textfield" type="text">
+                    </td>
+                    <td bgColor="#eef5ff" align="center">分盤
+                      <select id="select10" onchange="look10(this.value)" class="bd10" name="select10">
+                        <option selected="" value="全贏">全贏</option>
+                        <option value="全輸">全輸</option>
+                        <option value="平">平</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                      </select>
+                      <input id="bfb10" class="bd11" disabled="" name="bfb10" value="100" size="10" type="text"> %
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="td5" height="30" colSpan="3" align="left">
+                      <table width="383" height="27" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td width="137" align="center">
+                              <label>
+                                <input type="button" name="button" id="button" value="計 算" onclick="jisuan()">
+                              </label>
+                            </td>
+                            <td width="236">可贏金額 :
+                              <input id="jg" class="kuang" name="textfield" type="text">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </form>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="woedred14" height="84" vAlign="top" align="left">
+            註：中洞需自行輸入球頭<br>
+            例：洋基1+80紅襪，比賽結束2:1<br>
+            下注洋基：選擇(+)，填入80<br>
+            下注紅襪：選擇(-)，填入80
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

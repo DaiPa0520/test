@@ -1,0 +1,166 @@
+body {
+	color: #000000;
+	font-size: 14px;
+	background-color: #FFF;
+	font-family: 'Noto Sans TC', \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei", "Arial Black", Gadget, sans-serif;
+}
+/* .header {
+	line-height: 45px;
+	height: 45px;
+	color: #FFF;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei", "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background: #000;
+	background: -moz-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #434343), color-stop(100%, #000)););
+	background: -webkit-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: -o-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: -ms-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: linear-gradient(to bottom, #434343 0%, #000 100%);
+} */
+.header {
+	line-height: 45px;
+	height: 45px;
+	color: #FFF;
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei", "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background: #BF360C;
+	/* background: -moz-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #434343), color-stop(100%, #000)););
+	background: -webkit-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: -o-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: -ms-linear-gradient(bottom, #434343 0%, #000 100%);
+	background: linear-gradient(to bottom, #434343 0%, #000 100%); */
+}
+.td2 {
+	font-size: 15px;
+	line-height: 34px;
+	background-image: none!important;
+	height: 34px;
+	background-color: #FFF !important;
+	color: #333;
+}
+.td2 table {
+	height: 34px;
+	color: #333;
+	font-size: 15px;
+}
+td {
+	font-size: 13px;
+}
+th {
+	color: #000000;
+	font-size: 14px
+}
+body {
+	MARGIN: 0px
+}
+.bd1022 {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; WIDTH: 100px; HEIGHT: 20px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+.bd10 {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; WIDTH: 55px; HEIGHT: 20px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+.woedred14 {
+	line-height: 25px;
+	color: #000;
+	font-size: 14px;
+	padding: 0 20px;
+	background-color: #ededed;
+}
+.woedred14cu {
+	color: #cc0000; font-size: 14px; FONT-WEIGHT: bold
+}
+.bd11 {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; WIDTH: 30px; HEIGHT: 20px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+.black14cu {
+	color: #000000; font-size: 14px; FONT-WEIGHT: bold
+}
+.green {
+	color: #0a1cfe; font-size: 14px; FONT-WEIGHT: bold
+}
+body,td,th {
+	font-size: 16px;
+}
+/* .th1 th{
+	font-size: 15px;
+	color: #FFF;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #2e2e2e;
+} */
+.th1 th{
+	font-size: 15px;
+	color: #FFF;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #BF360C;
+}
+.td3 td {
+	background-color: #FFFFFF !important;
+	font-size: 15px;
+	color: #000;
+	padding: 3px;
+}
+.td4 td {
+	background-color: #ededed;
+	font-size: 15px;
+	color: #333;
+	padding: 3px;
+}
+.td5 td {
+	background-color: #FFFFFF;
+	font-size: 15px;
+	color: #000;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.td5 #button {
+	font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 31px;
+	color: #FFF;
+	height: 31px;
+	width: 99px;
+	border: 0;
+	background: #BF360C;
+	box-shadow: 1px 1px #dadada;
+	filter: progid:DXImageTransform.Microsoft.gradient( startcolorstr='#434b5b', endcolorstr='#323842',GradientType=0 );
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.kuang {
+	width:100px;
+	height:23px;
+	font-size:13px;
+	color:#000;
+	font-weight:normal;
+	text-align:left;
+	background-color: #fff;
+	line-height: 10px;
+	border:1px #343434 solid;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.kuang_a1 {
+	width: 76px;
+	height: 20px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #999;
+}
+.kuang_a2 {
+	width: 76px;
+	height: 20px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #999;
+}
+
+#toast-container > .toast {
+  width: 280px !important;
+}

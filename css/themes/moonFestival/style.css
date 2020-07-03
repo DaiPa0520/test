@@ -1,0 +1,12 @@
+.festival {
+    background: url(/client/css/themes/moonFestival/login.png) center no-repeat;
+    background-size: cover;
+}
+
+.theme--light.v-footer {
+    border-top: none;
+}
+
+.v-footer .copyright {
+    color: #fff;
+}

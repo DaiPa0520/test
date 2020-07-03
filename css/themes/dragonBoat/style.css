@@ -1,0 +1,14 @@
+.festival {
+    background: url(/client/css/themes/dragonBoat/login.png) center no-repeat;
+    background-size: cover;
+}
+
+.theme--light.v-footer {
+    border-top: none;
+}
+@media (max-width:1024px) {
+    .festival{
+        background: url(/client/css/themes/dragonBoat/login_mb.png) center no-repeat;
+        background-size: cover;
+    }   
+}
